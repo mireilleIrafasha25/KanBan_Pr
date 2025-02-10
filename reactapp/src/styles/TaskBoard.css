@@ -1,8 +1,13 @@
-/* .task-board {
+.task-board {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
     background-color: #f7f9fc;
+    min-height: 100vh;
+    min-width: 100vh;
+    gap:20px;
+    transition: background-color 0.3s ease-in-out;
   }
   
   .section {
@@ -11,6 +16,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    
   }
   
   .section-title {
@@ -32,6 +38,9 @@
     padding: 15px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
+  .task-card.dark{
+    background-color: #121212;
+  }
   
   .task-progress {
     font-size: 14px;
@@ -51,4 +60,16 @@
     background: #60a5fa;
     border-radius: 4px;
   }
-   */
+  .task-board.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .task-board.dark {
+    background-color: #121212;
+    color: white;
+  }
+  .section.dark{
+    background-color: #121212;
+  }
+  

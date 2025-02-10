@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { IoClose } from "react-icons/io5";
-import Register_own from './Registration Own';
+// import Register_own from './Registration Own';
 import { useNavigate } from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
 
@@ -77,7 +77,7 @@ const Login = ({ HandleLoginForm }) => {
 
   return (
     <div style={styles.overlay}>
-      {model && <Register_own HandleSignUpForm={HandleSignUpForm} />}
+      {/* {model && <Register_own HandleSignUpForm={HandleSignUpForm} />} */}
       <div style={styles.modal}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <h2 style={{ color: '#4a5568' }}>Login</h2>
@@ -141,7 +141,6 @@ const Login = ({ HandleLoginForm }) => {
         <p style={{ marginTop: '1rem', textAlign: 'center', color: '#718096' }}>
           Don’t have an account?{' '}
           <button
-            onClick={HandleSignUpForm}
             style={{ color: 'blue', background: "none", border: "none", cursor: "pointer" }}
           >
             Register

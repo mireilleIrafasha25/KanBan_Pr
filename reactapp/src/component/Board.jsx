@@ -6,8 +6,14 @@ import "../styles/Board.css";
 import { useDarkMode } from "./context/DarkModeContext";
 import DarkModeToggle from "./DarkMode";
 import { useState } from "react";
+import Login from "./login";
 
 const Board = () => {
+  const [modal,useModal]=useState(false);
+    const HandleLoginForm=()=>
+    {
+        useModal(!modal)
+    }
   const { darkMode } = useDarkMode();
   const [sidebarVisible, setSidebarVisible] = useState(true); // Sidebar visibility state
 
@@ -19,10 +25,11 @@ const Board = () => {
 
   return (
     <div className={`Main-Board ${darkMode ? "dark" : "light"}`}>
+      {modal && <Login HandleLoginForm={HandleLoginForm}/>}
       {sidebarVisible ? (
         <div className="Sidebar">
           <div className={`Login-Content ${darkMode? "dark":"light"}`}>
-            <button className={`Login-Button ${darkMode ? "dark" : "light"}`}>
+            <button onClick={HandleLoginForm} className={`Login-Button ${darkMode ? "dark" : "light"}`}>
               <FaCircleUser size={24} className="User-Icon" />
               <span>Log In</span>
             </button>
