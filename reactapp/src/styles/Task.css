@@ -2,7 +2,7 @@
 .Task-Top-Right{
     display: flex;
     flex-direction: row;
-    gap: 200px;
+    gap: 300px;
     border-bottom: 1px solid #ccc;
       padding: 0px;
 }

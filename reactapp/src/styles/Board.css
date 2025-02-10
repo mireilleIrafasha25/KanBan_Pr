@@ -2,10 +2,11 @@
     display: flex;
     flex-direction: column;
     gap: 0px;
+
 }
 .Login-Content{
 border-bottom: 1px solid #ccc;
-height: 40px;
+height: 70px;
 width:320px;
 }
 .Login-Button.dark{
@@ -20,7 +21,7 @@ width:320px;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    padding-top: 0px;
+    padding-top: 30px;
 }
 
 
@@ -69,7 +70,6 @@ width:320px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     transition: background-color 0.3s ease-in-out;
   }
   
@@ -86,11 +86,10 @@ width:320px;
   .Show-Sidebar {
     cursor: pointer;
     display: flex;
-    /* align-items: center; */
     gap: 10px;
     font-size: 18px;
     color:#333;
-    padding-top: 400px;
+    padding-top: 0px;
     margin: 20px;
   }
   
@@ -107,7 +106,7 @@ width:320px;
   .Sidebar {
     width: 300px;
     border-right: 1px solid #ccc;
-    padding: 20px;
+    /* padding: 20px; */
   }
   
   
