@@ -1,0 +1,57 @@
+
+.Task-Top-Right{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    border-bottom: 1px solid #ccc;
+      padding: 0px;
+}
+.Task-Top-Right span{
+    font-size: 16px;
+    color: #333;
+    padding-top: 18px;
+}
+.Task-Top{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+     height: 55px;
+    padding: 20px;
+}
+.ButtonAndMenu{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+    color:#333
+}
+.AddNewTask-Button{
+    background-color: #9370DB;
+    color: white;
+     width: 150px;
+    cursor: pointer;
+    height: 40px;
+    border-radius:30px;
+    border: none;
+}
+.Task-Menu{
+    color:#333;
+    margin-top: 5px;
+}
+.Main-Task {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .Main-Task.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .Main-Task.dark {
+    background-color: #121212;
+    color: white;
+  }

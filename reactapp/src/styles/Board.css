@@ -1,0 +1,115 @@
+.Main-Board{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.Login-Content{
+border-bottom: 1px solid #ccc;
+height: 40px;
+width:320px;
+}
+.Login-Button.dark{
+  background-color: #121212;
+}
+.Login-Button{
+    background-color:white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+}
+
+
+.Login-Button span{
+    margin-top: 5px;
+    color:#9370DB;
+    font-size: large;
+ font-family:'Times New Roman', Times, serif;
+ font-weight:bolder;
+ 
+}
+.User-Icon{
+    color:#88a4bb;
+}
+.Board-Content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: gray;
+    padding: 20px;
+    padding-top: 0px;
+    font-size: 18px;
+}
+.Card-Icon{
+    size: 20px;
+}
+.Board-Card{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+.Create-NewBoard{
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 20px;
+    font-weight:bolder;
+    margin-top: 20px;
+    color: #9370DB;
+}
+.Main-Board {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .Main-Board.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .Main-Board.dark {
+    background-color: #121212;
+    color: white;
+  }
+
+  .Show-Sidebar {
+    cursor: pointer;
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+    font-size: 18px;
+    color:#333;
+    padding-top: 400px;
+    margin: 20px;
+  }
+  
+  .Hide-Sidebar {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .Sidebar {
+    width: 300px;
+    border-right: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  
+  
+  

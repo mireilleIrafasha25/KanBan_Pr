@@ -1,0 +1,20 @@
+.Main-Division{
+    /* display: flex;
+    flex-direction: row;
+    gap: 5px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    transition: background-color 0.3s ease-in-out;
+}
+ 
+  .Main-Division.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .Main-Division.dark {
+    background-color: #121212;
+    color: white;
+  }
+  
