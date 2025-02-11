@@ -2,13 +2,16 @@ import { CiMenuKebab } from "react-icons/ci";
 import { useDarkMode } from "./context/DarkModeContext";
 import "../styles/Task.css";
 import "../styles/TaskBoard.css";
+import { IoClose } from "react-icons/io5";
+import Collapsible from "./collapsible";
+
 import { useState } from "react";
 
 const Task = () => {
   const { darkMode } = useDarkMode();
   const initialTasks = {
     todo: [
-      { id: 1, title: "Build settings UI", subtasks: 2, completedSubtasks: 1 },
+      { id: 1, title: "Build settings UI", subtasks: 2, completedSubtasks: 1,subtaskname1:"Account page" ,subtaskname2:"Billing page"},
       { id: 2, title: "QA and test all major user journeys", subtasks: 2, completedSubtasks: 0 },
       { id: 3, title: "Take coffee break", subtasks: 1, completedSubtasks: 1 }
     ],
@@ -90,18 +93,28 @@ const Task = () => {
       {selectedTask && (
   <div className="modal-overlay">
     <div className="modal">
-      <h2>{selectedTask.title}</h2>
+
+     <div className="modal-title"> <h2>{selectedTask.title}</h2><CiMenuKebab/><IoClose className="modal-close" onClick={() => setSelectedTask(null)} /></div>
       <p>
-        {selectedTask.completedSubtasks} of {selectedTask.subtasks} subtasks completed
+       subtasks ( {selectedTask.completedSubtasks} of {selectedTask.subtasks})
       </p>
-      <div className="modal-actions">
-        <button onClick={() => handleMoveTask("todo")}>Move to Todo</button>
-        <button onClick={() => handleMoveTask("doing")}>Move to Doing</button>
-        <button onClick={() => handleMoveTask("done")}>Move to Done</button>
+      <div className="task-subtasks">
+        <form>
+          <div className="checkBox"><input type="checkbox"/><label>{selectedTask.subtaskname1}</label></div>
+          <div className="checkBox"><input type="checkbox"/><label>{selectedTask.subtaskname2}</label></div>
+        </form> 
       </div>
-      <button className="modal-close" onClick={() => setSelectedTask(null)}>
-        Close
-      </button>
+      
+      <div className="modal-1">
+      <p>Current Status</p>
+      <div>
+      <Collapsible title="Todo">
+      <p>Doing</p>
+      <p>Done</p>
+      <p>+Add new Column</p>
+      </Collapsible>
+      </div>
+      </div>
     </div>
   </div>
 )}

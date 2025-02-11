@@ -106,11 +106,14 @@
 }
 
 .modal-close {
-  margin-top: 20px;
-  background: red;
-  color: white;
   border: none;
-  padding: 8px 16px;
-  border-radius: 4px;
   cursor: pointer;
+}
+/* .task-title{
+  display: flex;
+  flex-direction: row;
+} */
+.modal-title{
+  display:"flex";
+  flex-direction: row;
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/TaskBoard.css"; 
-
+import { IoClose } from "react-icons/io5";
+import { CiMenuKebab } from "react-icons/ci";
 const TaskBoard = () => {
   const initialTasks = {
     todo: [
